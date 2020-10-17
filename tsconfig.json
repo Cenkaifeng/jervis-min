@@ -21,7 +21,11 @@
     "lib": ["es5"],
     "typeRoots": [
       "./typings"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+        "@vant/weapp/*": ["node_modules/@vant/weapp/dist"]
+    }
   },
   "include": [
     "./**/*.ts"

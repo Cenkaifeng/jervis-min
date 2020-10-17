@@ -1,12 +1,23 @@
 // app.ts
+const AV = require('./libs/av-core-min.js');
+const adapters = require('./libs/leancloud-adapters-weapp.js');
+const { AV_INIT_SET } = require('./config/index.js');
+
+AV.setAdapters(adapters);
+AV.init(AV_INIT_SET);
+AV.debug.enable();  // 启用
+// AV.debug.disable(); // 停用
 App<IAppOption>({
-  globalData: {},
+  globalData: {
+      
+  },
+  AV,
   onLaunch() {
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    console.log('app this', this);
     // 登录
     wx.login({
       success: res => {

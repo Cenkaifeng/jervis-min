@@ -42,6 +42,17 @@ Page({
         },
       })
     }
+
+    this.testLeanCloud();
+
+  },
+  testLeanCloud() {
+    const TestObject = app.AV.Object.extend('TestObject');
+    const testObject = new TestObject();
+    testObject.set('words', 'Hello world!');
+      testObject.save().then((testObject: any) => {
+      console.log('保存成功。',  testObject)
+    })
   },
   getUserInfo(e: any) {
     console.log(e)
