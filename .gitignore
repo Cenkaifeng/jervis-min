@@ -2,5 +2,5 @@ node_modules
 dist
 .cache-loader
 yarn-error.log
-miniprogram/config/index.js
+miniprogram/config
 .awcache
