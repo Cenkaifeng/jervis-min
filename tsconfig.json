@@ -24,7 +24,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-        "@vant/weapp/*": ["node_modules/@vant/weapp/dist"]
+        "@vant/weapp/*": ["node_modules/@vant/weapp/dist/*"]
     }
   },
   "include": [
