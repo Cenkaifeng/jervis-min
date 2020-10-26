@@ -1,14 +1,19 @@
 {
-  "name": "miniprogram",
+  "name": "miniprogram-ts-quickstart",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "./node_modules/typescript/bin/tsc",
+    "tsc": "node ./node_modules/typescript/lib/tsc.js"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
     "@vant/weapp": "^1.5.2"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^2.8.3-1",
+    "typescript": "^3.3.3333"
   }
 }

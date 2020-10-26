@@ -6,14 +6,14 @@
   "miniprogramRoot": "miniprogram/",
   "compileType": "miniprogram",
   "libVersion": "2.8.2",
-  "projectname": "jervis-mini",
+  "projectname": "jervis-min",
   "scripts": {
     "beforeCompile": "npm run tsc",
     "beforePreview": "npm run tsc",
     "beforeUpload": "npm run tsc"
   },
   "setting": {
-    "urlCheck": false,
+    "urlCheck": true,
     "es6": true,
     "enhance": false,
     "postcss": true,
@@ -37,6 +37,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": false,
     "userConfirmedUseCompilerModuleSwitch": false,

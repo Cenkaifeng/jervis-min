@@ -1,6 +1,9 @@
 node_modules
+miniprogram_npm
 dist
 .cache-loader
 yarn-error.log
 miniprogram/config
 .awcache
+
+## miniprogram/pages/*.js

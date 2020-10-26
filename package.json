@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "compile": "./node_modules/typescript/bin/tsc",
-    "tsc": "node ./node_modules/typescript/lib/tsc.js"
+    "tsc": "node ./node_modules/typescript/lib/tsc.js",
+    "add:page": "node build/wxapp.js --type=page --name",
+    "add:component": "node build/wxapp.js --type=component --name"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +15,10 @@
     "@vant/weapp": "^1.5.2"
   },
   "devDependencies": {
+    "chalk": "^4.1.0",
     "miniprogram-api-typings": "^2.8.3-1",
+    "ora": "^5.1.0",
+    "safe-write-file": "^1.1.2",
     "typescript": "^3.3.3333"
   }
 }

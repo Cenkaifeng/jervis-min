@@ -8,6 +8,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    active: 0
   },
   // 事件处理函数
   bindViewTap() {
@@ -62,4 +63,7 @@ Page({
       hasUserInfo: true,
     })
   },
+  onChange( event:any ) {
+      this.setData({ active: event.detail});
+  }
 })
