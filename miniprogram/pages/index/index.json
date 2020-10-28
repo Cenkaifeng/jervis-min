@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "index-com": "./../../components/index-com/index-com",
     "van-tabbar": "@vant/weapp/tabbar/index",
     "van-tabbar-item": "@vant/weapp/tabbar-item/index"
   }
